@@ -142,8 +142,6 @@ jobs:
     needs: [linux]
     steps:
       - uses: actions/download-artifact@v4
-        with:
-          name: *wheels*
       - run: ls -l
       # - name: Publish to PyPI
       #   uses: PyO3/maturin-action@v1
